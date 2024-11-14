@@ -8,5 +8,5 @@ export default defineConfig({
     assetsDir: 'assets', 
     emptyOutDir: true, 
   },
-  base: './' // 设置基础公共路径
+  base: './'
 })
