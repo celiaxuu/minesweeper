@@ -1,0 +1,319 @@
+.app-container {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #828282;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 15%; 
+}
+
+.navbar button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #555;
+}
+
+.cell {
+  border: 1px solid #999;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  flex-shrink: 0; 
+}
+
+.cell:hover {
+  background-color: #ddd;
+}
+
+.cell.revealed {
+  background-color: #fff;
+}
+
+.cell.flagged {
+  background-color: #ffe6e6;
+}
+
+.row {
+  display: flex;
+  white-space: nowrap;
+  min-width: min-content;
+}
+
+.row {
+  display: flex;
+  margin: 0;  
+  padding: 0;  
+  line-height: 0; 
+  font-size: 0;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-header {
+  margin-bottom: 20px;
+}
+
+.game-info {
+  margin: 10px 0;
+}
+
+.game-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.game-info span {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.game-header h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-top: 1rem;
+}
+
+.cell {
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+  background-color: #eee;
+  font-size: 14px; 
+  line-height: normal;
+}
+
+.easy .cell {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.medium .cell {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.hard .cell {
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .easy .cell {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .medium .cell {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .hard .cell {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .easy .cell {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .medium .cell {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .hard .cell {
+    width: 18px;
+    height: 18px;
+    font-size: 9px;
+  }
+}
+
+.board-container {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  max-width: 95vw;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.app-home {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-rules {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 5px 0;
+  margin-top: 5px;
+  min-width: 120px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu button:hover {
+  background-color: #555;
+}
+
+.home {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 5%;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.rule h1{
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 5%;
+}
+
+.rule h2{
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 2%;
+}
+
+.rule .content {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.rule p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  padding: 0 20px;
+}
